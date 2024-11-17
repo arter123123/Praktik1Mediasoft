@@ -1,0 +1,61 @@
+Post
+body raw json
+{
+  "sku": "ABC123",
+  "name": "Product Name",
+  "description": "Description of the product",
+  "category": "Electronics",
+  "price": 99.99,
+  "quantity": 10
+}
+Ответ
+{
+    "id": "10c778d1-3769-402a-b6b7-4c708dc4ae08",                       (id используем дальше для запросов)
+    "sku": "ABC123",
+    "name": "Product Name",
+    "description": "Description of the product",
+    "category": "Electronics",
+    "price": 99.99,
+    "quantity": 10,
+    "lastQuantityUpdate": null,
+    "createdDate": "2024-11-17T02:48:59.81743936"
+}
+Get
+Ответ
+{
+    "id": "10c778d1-3769-402a-b6b7-4c708dc4ae08",
+    "sku": "ABC123",
+    "name": "Product Name",
+    "description": "Description of the product",
+    "category": "Electronics",
+    "price": 99.99,
+    "quantity": 10,
+    "lastQuantityUpdate": null,
+    "createdDate": "2024-11-17T02:48:59.817439"
+}
+PUT
+body raw json
+{
+  "sku": "ABC123",
+  "name": "Updated Product Name",
+  "description": "Updated Description",
+  "category": "Updated Category",
+  "price": 109.99,
+  "quantity": 15
+}
+Ответ
+{
+    "id": "10c778d1-3769-402a-b6b7-4c708dc4ae08",
+    "sku": "ABC123",
+    "name": "Updated Product Name",
+    "description": "Description of the product",
+    "category": "Updated Category",
+    "price": 109.99,
+    "quantity": 15,
+    "lastQuantityUpdate": "2024-11-17T02:51:43.094161607",
+    "createdDate": "2024-11-17T02:48:59.817439"
+}
+DEL
+Ответ
+PASS
+Successful DELETE request
